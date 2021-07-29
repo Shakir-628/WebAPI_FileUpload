@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="FileDetailsModelStoreContainer" CdmEntityContainer="FileDetailsEntities">
+    <EntitySetMapping Name="tblFileDetails">
+      <EntityTypeMapping TypeName="FileDetailsModel.tblFileDetail">
+        <MappingFragment StoreEntitySet="tblFileDetail">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="DocFile" ColumnName="DocFile" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FileDetailsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="tblFileDetail">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="30" />
+    <Property Name="DocFile" Type="nvarchar(max)" />
+    <Property Name="Image" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityContainer Name="FileDetailsModelStoreContainer">
+    <EntitySet Name="tblFileDetail" EntityType="Self.tblFileDetail" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
